@@ -2,7 +2,7 @@
 
 
 
-[project:] 
+[SIGN:] 
 This project leverages computer vision to analyze sign language gestures in real-time, providing feedback on the quality of a lecture presentation. It uses MediaPipe for hand tracking and recognition, allowing it to identify specific signs that correspond to different levels of lecture quality. 
 
 
