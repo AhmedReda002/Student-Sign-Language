@@ -18,13 +18,6 @@ This project leverages computer vision to analyze sign language gestures in real
 
 [Provide a clear explanation of how the system works. You could use a bullet point list for the sign language gestures and their corresponding feedback levels.]
 
-**Sign Language:**
-
-* **[Sign 1]:** [Description of the sign, including hand configuration and movement.] - **Feedback:** [Level of feedback]
-* **[Sign 2]:** [Description of the sign, including hand configuration and movement.] - **Feedback:** [Level of feedback]
-* **[Sign 3]:** [Description of the sign, including hand configuration and movement.] - **Feedback:** [Level of feedback]
-* **[Sign 4]:** [Description of the sign, including hand configuration and movement.] - **Feedback:** [Level of feedback]
-
 
 ##  Code Structure
 
@@ -79,14 +72,7 @@ if results.multi_hand_landmarks:
                         1.5, (0, 0, 255), 3)
 
 # Save screenshots every 10 frames
-if frame_count % 10 == 0:
-    screenshot_filename = f"{screenshots_folder}/screenshot_{frame_count}.jpg" 
-    cv2.imwrite(screenshot_filename, img)
-frame_count += 1
-
-cv2.imshow('Hand Tracker', img)
-if cv2.waitKey(5) & 0xFF == 27:
-    break
+its save screenshots in same folder for review the sign model for students and you can link it with database if you need
     
   
 ###  Example
